@@ -1,0 +1,107 @@
+# Create user
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "name": "Daka",
+  "email": "admin@gmail.com",
+  "password": "123456",
+  "confPassword": "123456",
+  "role": "admin"
+}
+
+###
+# Get All Users
+GET http://localhost:8080/users
+
+
+###
+# get single user
+GET http://localhost:8080/users/04f11847-8d30-49ce-9f70-bcda3ced7b0c
+
+###
+# update user by id
+PATCH http://localhost:8080/users/dbdd38e1-fd07-468e-9d60-9247bf42d169
+Content-Type: application/json
+
+{
+  "name": "John Updated",
+  "email": "john@gmail.com",
+  "password": "",
+  "confPassword": "",
+  "role": "user"
+}
+
+
+###
+# delete user by id
+DELETE http://localhost:8080/users/dbdd38e1-fd07-468e-9d60-9247bf42d169
+
+
+###
+# login admin
+POST http://localhost:8080/login
+Content-Type: application/json
+
+{
+  "email": "admin@gmail.com",
+  "password": "123456"
+}
+
+###
+# login user
+POST http://localhost:8080/login
+Content-Type: application/json
+
+{
+  "email": "john@gmail.com",
+  "password": "123456"
+}
+
+###
+# get me
+GET http://localhost:8080/me
+
+
+###
+# logout
+DELETE http://localhost:8080/logout
+
+
+
+###
+# get all products
+GET http://localhost:8080/products
+
+
+###
+# get products by id
+GET http://localhost:8080/products/d575017d-7599-4e95-9ad9-f53c7526c013
+
+
+
+###
+# create product
+POST http://localhost:8080/products
+Content-Type: application/json
+
+{
+  "name": "product user",
+  "price": "123456"
+}
+
+
+###
+# update product
+PATCH http://localhost:8080/products/d575017d-7599-4e95-9ad9-f53c7526c013
+Content-Type: application/json
+
+{
+  "name": "product updated",
+  "price": "123"
+}
+
+
+###
+# delete by id
+DELETE http://localhost:8080/products/227e33d1-0faf-4477-bcd2-bcd5e7c16704
