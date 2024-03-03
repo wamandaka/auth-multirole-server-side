@@ -45,7 +45,7 @@ export const createUser = async (req, res) => {
     // res.status(400).json({msg: error.message});
   }
 };
-export const updateUser = async (req, res) => {
+export const updateUserById = async (req, res) => {
     const user = await User.findOne({
       where: {
         uuid: req.params.id,
