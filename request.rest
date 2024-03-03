@@ -3,11 +3,11 @@ POST http://localhost:8080/users
 Content-Type: application/json
 
 {
-  "name": "Daka",
-  "email": "admin@gmail.com",
+  "name": "Coba",
+  "email": "coba@gmail.com",
   "password": "123456",
   "confPassword": "123456",
-  "role": "admin"
+  "role": "user"
 }
 
 ###
@@ -17,11 +17,11 @@ GET http://localhost:8080/users
 
 ###
 # get single user
-GET http://localhost:8080/users/04f11847-8d30-49ce-9f70-bcda3ced7b0c
+GET http://localhost:8080/users/d8bece5a-8317-41ca-8100-0eb7e5a71607
 
 ###
 # update user by id
-PATCH http://localhost:8080/users/dbdd38e1-fd07-468e-9d60-9247bf42d169
+PATCH http://localhost:8080/users/d8bece5a-8317-41ca-8100-0eb7e5a71607
 Content-Type: application/json
 
 {
@@ -29,7 +29,7 @@ Content-Type: application/json
   "email": "john@gmail.com",
   "password": "",
   "confPassword": "",
-  "role": "user"
+  "role": "admin"
 }
 
 
